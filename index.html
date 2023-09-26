@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>tailwind css</title>
+  </head>
+
+  <body class="bg-slate-200 text-slate-500">
+    <!-- navbar start -->
+    <nav
+      class="flex justify-between items-center font-medium text-lg capitalize h-[80px] bg-white"
+    >
+      <div class="flex-1">
+        <img src="./image/logo-white.png" alt="" />
+      </div>
+      <div class="flex-1 lg:inline-block hidden">
+        <ul class="flex justify-between gap-x-5">
+          <li>
+            <a href="#" class="hover:underline underline-offset-4">home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline underline-offset-4">features</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline underline-offset-4">products</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline underline-offset-4"
+              >categories</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:underline underline-offset-4">reviews</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline underline-offset-4">blog's</a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex-1 flex justify-end items-center gap-x-2 sm:gap-x-3 md:gap-x-5 lg:gap-x-7 xl:gap-x-10"
+      >
+        <a
+          href=""
+          class="bg-slate-300 hover:bg-slate-400 px-3 py-2 sm:px-5 sm:py-3 rounded shadow-lg shadow-gray-500"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <a
+          href=""
+          class="bg-slate-300 hover:bg-slate-400 px-3 py-2 sm:px-5 sm:py-3 rounded shadow-lg shadow-gray-500"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+        <a
+          href=""
+          class="bg-slate-300 hover:bg-slate-400 px-3 py-2 sm:px-5 sm:py-3 rounded mr-1 md:mr-3 lg:mr-5 shadow-lg shadow-gray-500"
+          ><i class="fa-solid fa-user"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section class="relative h-96">
+      <div class="h-full w-full">
+        <img
+          src="./image/banner-bg.webp"
+          alt=""
+          class="h-full w-full object-cover object-center"
+        />
+      </div>
+      <div
+        class="absolute top-0 h-full w-full flex flex-col justify-center items-center capitalize"
+      >
+        <h1 class="text-3xl font-bold mb-3 text-center">
+          fresh and <span class="text-orange-500">organic</span> products for
+          you
+        </h1>
+        <p class="text-center lg:w-2/5 w-4/5 font-light text-lg">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
+          incidunt. Corrupti iste iusto natus. Nobis saepe quod laudantium ipsam
+          ut!
+        </p>
+        <button
+          class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-5 px-5 py-2"
+        >
+          buy now
+        </button>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- feature card start -->
+    <div class="flex justify-center flex-col items-center">
+      <h1 class="text-5xl uppercase my-5 mb-7 text-center">
+        our <span class="text-orange-500">features</span>
+      </h1>
+      <div class="w-11/12 flex flex-wrap gap-10 justify-center">
+        <section
+          class="h-[320px] w-[350px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/feature-img-1.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">fresh and organic</h2>
+          <p class="text-center text-gray-400">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+            necessitatibus!
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-5 px-5 py-2"
+          >
+            read more
+          </button>
+        </section>
+        <section
+          class="h-[320px] w-[350px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/feature-img-2.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">free delivery</h2>
+          <p class="text-center text-gray-400">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+            necessitatibus!
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-5 px-5 py-2"
+          >
+            read more
+          </button>
+        </section>
+        <section
+          class="h-[320px] w-[350px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/feature-img-3.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">easy payment</h2>
+          <p class="text-center text-gray-400">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+            necessitatibus!
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-5 px-5 py-2"
+          >
+            read more
+          </button>
+        </section>
+      </div>
+    </div>
+    <!-- frature card end -->
+
+    <!-- product card start -->
+
+    <div class="flex justify-center flex-col items-center">
+      <h1 class="text-5xl uppercase my-5 mb-7 text-center">
+        our <span class="text-orange-500">products</span>
+      </h1>
+      <div class="w-11/12 flex flex-wrap gap-10 justify-center">
+        <section
+          class="h-[300px] w-[230px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/product-1.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">orenge</h2>
+          <p class="text-center text-gray-400 capitalize">
+            <i class="fa-solid fa-indian-rupee-sign"></i> 30
+          </p>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            add to card
+          </button>
+        </section>
+        <section
+          class="h-[300px] w-[230px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/product-2.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">orenge</h2>
+          <p class="text-center text-gray-400 capitalize">
+            <i class="fa-solid fa-indian-rupee-sign"></i> 30
+          </p>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            add to card
+          </button>
+        </section>
+        <section
+          class="h-[300px] w-[230px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/product-3.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">orenge</h2>
+          <p class="text-center text-gray-400 capitalize">
+            <i class="fa-solid fa-indian-rupee-sign"></i> 30
+          </p>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            add to card
+          </button>
+        </section>
+        <section
+          class="h-[300px] w-[230px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/product-4.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">orenge</h2>
+          <p class="text-center text-gray-400 capitalize">
+            <i class="fa-solid fa-indian-rupee-sign"></i> 30
+          </p>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            add to card
+          </button>
+        </section>
+        <section
+          class="h-[300px] w-[230px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/product-5.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">orenge</h2>
+          <p class="text-center text-gray-400 capitalize">
+            <i class="fa-solid fa-indian-rupee-sign"></i> 30
+          </p>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            add to card
+          </button>
+        </section>
+        <section
+          class="h-[300px] w-[230px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/product-6.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">orenge</h2>
+          <p class="text-center text-gray-400 capitalize">
+            <i class="fa-solid fa-indian-rupee-sign"></i> 30
+          </p>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            add to card
+          </button>
+        </section>
+        <section
+          class="h-[300px] w-[230px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/product-7.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">orenge</h2>
+          <p class="text-center text-gray-400 capitalize">
+            <i class="fa-solid fa-indian-rupee-sign"></i> 30
+          </p>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            add to card
+          </button>
+        </section>
+        <section
+          class="h-[300px] w-[230px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/product-8.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">orenge</h2>
+          <p class="text-center text-gray-400 capitalize">
+            <i class="fa-solid fa-indian-rupee-sign"></i> 30
+          </p>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            add to card
+          </button>
+        </section>
+      </div>
+    </div>
+
+    <!-- product card end -->
+
+    <!-- categories card start -->
+
+    <div class="flex justify-center flex-col items-center">
+      <h1 class="text-5xl uppercase my-5 mb-7 text-center">
+        product <span class="text-orange-500">categories</span>
+      </h1>
+      <div class="w-11/12 flex flex-wrap gap-10 justify-center">
+        <section
+          class="h-[290px] w-[260px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/cat-1.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">vegitables</h2>
+          <p class="text-center text-gray-400 capitalize">upto 45% off</p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            show now
+          </button>
+        </section>
+        <section
+          class="h-[290px] w-[260px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/cat-2.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">vegitables</h2>
+          <p class="text-center text-gray-400 capitalize">upto 45% off</p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            show now
+          </button>
+        </section>
+        <section
+          class="h-[290px] w-[260px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/cat-3.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">vegitables</h2>
+          <p class="text-center text-gray-400 capitalize">upto 45% off</p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            show now
+          </button>
+        </section>
+        <section
+          class="h-[290px] w-[260px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/cat-4.png" alt="" class="h-36" />
+          <h2 class="capitalize text-2xl font-semibold">vegitables</h2>
+          <p class="text-center text-gray-400 capitalize">upto 45% off</p>
+          <button
+            class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-3 px-5 py-2"
+          >
+            show now
+          </button>
+        </section>
+      </div>
+    </div>
+
+    <!-- categories card end -->
+
+    <!-- customer card start -->
+
+    <div class="flex justify-center flex-col items-center">
+      <h1 class="text-5xl uppercase my-5 mb-7 text-center">
+        customer's <span class="text-orange-500">reviews</span>
+      </h1>
+      <div class="w-11/12 flex flex-wrap gap-10 justify-center">
+        <section
+          class="h-[290px] w-[290px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/pic-1.png" alt="" class="h-24 rounded-full mb-2" />
+          <p
+            class="text-center text-gray-400 capitalize text-sm font-normal w-11/12"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae nobis magnam dolorum sint vel consequuntur, quaerat
+            nostrum impedit.
+          </p>
+          <h2 class="text-2xl capitalize font-semibold mt-1">john deo</h2>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+        </section>
+        <section
+          class="h-[290px] w-[290px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/pic-2.png" alt="" class="h-24 rounded-full mb-2" />
+          <p
+            class="text-center text-gray-400 capitalize text-sm font-normal w-11/12"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae nobis magnam dolorum sint vel consequuntur, quaerat
+            nostrum impedit.
+          </p>
+          <h2 class="text-2xl capitalize font-semibold mt-1">john deo</h2>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+        </section>
+        <section
+          class="h-[290px] w-[290px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/pic-3.png" alt="" class="h-24 rounded-full mb-2" />
+          <p
+            class="text-center text-gray-400 capitalize text-sm font-normal w-11/12"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae nobis magnam dolorum sint vel consequuntur, quaerat
+            nostrum impedit.
+          </p>
+          <h2 class="text-2xl capitalize font-semibold mt-1">john deo</h2>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+        </section>
+        <section
+          class="h-[290px] w-[290px] bg-white flex flex-col items-center justify-center border-2 border-gray-500 border-solid hover:border-4"
+          style="box-shadow: 0 0 0 10px #ffffff"
+        >
+          <img src="./image/pic-4.png" alt="" class="h-24 rounded-full mb-2" />
+          <p
+            class="text-center text-gray-400 capitalize text-sm font-normal w-11/12"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae nobis magnam dolorum sint vel consequuntur, quaerat
+            nostrum impedit.
+          </p>
+          <h2 class="text-2xl capitalize font-semibold mt-1">john deo</h2>
+          <p>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- customer card end -->
+
+    <!-- blog's card start -->
+    <div class="flex justify-center flex-col items-center pb-8">
+      <h1 class="text-5xl uppercase my-5 mb-7 text-center">
+        customer's <span class="text-orange-500">reviews</span>
+      </h1>
+      <div class="w-11/12 flex flex-wrap gap-5 justify-center">
+        <section
+          class="h-[400px] sm:h-[380px] w-[350px] bg-white flex flex-col rounded items-center hover:scale-105"
+        >
+          <img
+            src="./image/blog-1.jpg"
+            alt=""
+            class="h-2/4 w-full object-cover rounded-t"
+          />
+          <div class="w-11/12">
+            <div
+              class="flex justify-between text-xs capitalize font-extralight my-2"
+            >
+              <p><i class="fa-solid fa-user"></i> by user</p>
+              <p><i class="fa-solid fa-calendar-days"></i> 23rd sep,2023</p>
+            </div>
+            <hr />
+            <h2 class="capitalize font-bold text-base my-2">
+              fresh and organic friuts and vegitables
+            </h2>
+            <p class="font-light text-sm">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Laboriosam, ullam?
+            </p>
+            <button
+              class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-2 px-5 py-2"
+            >
+              read more
+            </button>
+          </div>
+        </section>
+        <section
+          class="h-[400px] sm:h-[380px] w-[350px] bg-white flex flex-col rounded items-center hover:scale-105"
+        >
+          <img
+            src="./image/blog-2.jpg"
+            alt=""
+            class="h-2/4 w-full object-cover rounded-t"
+          />
+          <div class="w-11/12">
+            <div
+              class="flex justify-between text-xs capitalize font-extralight my-2"
+            >
+              <p><i class="fa-solid fa-user"></i> by user</p>
+              <p><i class="fa-solid fa-calendar-days"></i> 23rd sep,2023</p>
+            </div>
+            <hr />
+            <h2 class="capitalize font-bold text-base my-2">
+              fresh and organic friuts and vegitables
+            </h2>
+            <p class="font-light text-sm">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Laboriosam, ullam?
+            </p>
+            <button
+              class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-2 px-5 py-2"
+            >
+              read more
+            </button>
+          </div>
+        </section>
+        <section
+          class="h-[400px] sm:h-[380px] w-[350px] bg-white flex flex-col rounded items-center hover:scale-105"
+        >
+          <img
+            src="./image/blog-3.jpg"
+            alt=""
+            class="h-2/4 w-full object-cover rounded-t"
+          />
+          <div class="w-11/12">
+            <div
+              class="flex justify-between text-xs capitalize font-extralight my-2"
+            >
+              <p><i class="fa-solid fa-user"></i> by user</p>
+              <p><i class="fa-solid fa-calendar-days"></i> 23rd sep,2023</p>
+            </div>
+            <hr />
+            <h2 class="capitalize font-bold text-base my-2">
+              fresh and organic friuts and vegitables
+            </h2>
+            <p class="font-light text-sm">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Laboriosam, ullam?
+            </p>
+            <button
+              class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-2 px-5 py-2"
+            >
+              read more
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- blog's card end -->
+
+    <!-- footer start -->
+    <footer class=" bg-white pb-5 px-5 justify-center md:px-20 flex flex-wrap font-medium text-slate-500">
+      <div class="w-72 ">
+        <h1 class="text-2xl font-bold capitalize text-blue-500 py-5 pb-3">
+          achievers
+          <span class="text-orange-500 uppercase"
+            >it<i class="fa-solid fa-basket-shopping"></i
+          ></span>
+        </h1>
+        <p class="mb-2 w-11/12">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+          nesciunt?
+        </p>
+        <p>
+          <i
+            class="fa-brands fa-facebook px-2 rounded py-2 bg-slate-300 mr-1"
+          ></i
+          ><i
+            class="fa-brands fa-twitter px-2 rounded py-2 bg-slate-300 mr-1"
+          ></i>
+          <i
+            class="fa-brands fa-instagram px-2 rounded py-2 bg-slate-300 mr-1"
+          ></i
+          ><i
+            class="fa-brands fa-linkedin px-2 rounded py-2 bg-slate-300 mr-1"
+          ></i>
+        </p>
+      </div>
+      <div class="w-72 ">
+        <h1 class="text-2xl font-bold capitalize text-blue-500 py-5 pb-3">
+          contact info
+        </h1>
+        <ul class="capitalize">
+          <li class="mb-1  group">
+            <i class="fa-solid fa-phone hidden transition-all group-hover:inline-block fa-rotate-270 text-orange-500"></i>
+            +638-347-9344
+          </li>
+          <li class="mb-1">
+            <i class="fa-solid fa-phone fa-rotate-270 text-orange-500"></i>
+            +638-347-9344
+          </li>
+          <li class="mb-1">
+            <i class="fa-solid fa-envelope text-orange-500"></i>
+            elangovan2019miss@gmail.com
+          </li>
+          <li class="mb-1">
+            <i class="fa-solid fa-location-dot text-orange-500"></i> bengaluru,
+            india - 500002
+          </li>
+        </ul>
+      </div>
+      <div class="w-72">
+        <h1 class="text-2xl font-bold capitalize text-blue-500 py-5 pb-3">
+          quick link
+        </h1>
+        <ul class="capitalize">
+          <li class="mb-1">
+            <a href="#"
+              ><i class="fa-solid fa-arrow-right text-orange-500"></i> home</a
+            >
+          </li>
+          <li class="mb-1">
+            <a href="#"
+              ><i class="fa-solid fa-arrow-right text-orange-500"></i>
+              features</a
+            >
+          </li>
+          <li class="mb-1">
+            <a href="#"
+              ><i class="fa-solid fa-arrow-right text-orange-500"></i>
+              products</a
+            >
+          </li>
+          <li class="mb-1">
+            <a href="#"
+              ><i class="fa-solid fa-arrow-right text-orange-500"></i>
+              categories</a
+            >
+          </li>
+          <li class="mb-1">
+            <a href="#"
+              ><i class="fa-solid fa-arrow-right text-orange-500"></i> review</a
+            >
+          </li>
+          <li class="mb-1">
+            <a href="#"
+              ><i class="fa-solid fa-arrow-right text-orange-500"></i> blogs</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="w-72">
+        <h1 class="text-2xl font-bold capitalize text-blue-500 py-5 pb-3">
+          newsletter
+        </h1>
+        <p class="capitalize">subscribe forlatest update</p>
+        <input type="text" placeholder="your email" class="bg-slate-300 p-1" />
+        <button
+          class="border-solid border-2 capitalize border-slate-700 hover:text-white hover:border-orange-500 hover:bg-orange-500 active:scale-90 active:bg-orange-400 active:border-orange-400 font-semibold my-2 px-5 py-2"
+        >
+          subscribe
+        </button>
+        <img src="./image/payment.png" alt="">
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- creator detial start -->
+    <div class="bg-white px-5">
+      <hr class="h-[3px] bg-slate-500" />
+      <h1 class="text-center font-semibold text-xl capitalize py-5">
+        created by <span class="text-orange-500">Mr.Elangovan</span> | all right
+        reserved
+      </h1>
+    </div>
+    <!-- creator detail end -->
+  </body>
+</html>
